@@ -6,6 +6,7 @@ def read_input():
     text = input().rstrip()
     return pattern, text
 
+
 def print_occurrences(output):
     print(' '.join(map(str, output)))
 
