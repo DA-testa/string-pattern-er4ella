@@ -5,11 +5,11 @@ def read_input():
         text = input().rstrip()
     elif "F" in inn:
         name = input().rstrip()
-        path = './test/'
-        file = path + name
+        #path = './test/'
+        #file = path + name
         if "a" not in name:
             try:
-                with open(file) as f:
+                with open(name) as f:
                     pattern = f.readline().rstrip()
                     text = f.readline().rstrip()
             except FileNotFoundError:
