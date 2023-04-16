@@ -4,7 +4,7 @@ def read_input():
         pattern = input().rstrip()
         text = input().rstrip()
     elif "F" in inn:
-        with open ('input.txt', 'r') as f:
+        with open ('06', 'r') as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
     return pattern, text
