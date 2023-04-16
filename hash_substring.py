@@ -6,7 +6,6 @@ def read_input():
     text = input().rstrip()
     return pattern, text
 
-
 def print_occurrences(output):
     print(' '.join(map(str, output)))
 
@@ -30,7 +29,6 @@ def get_occurrences(pattern, text):
             text_hash = hash(text[i+1:i+pattern_length+1])
 
     return occurrences
-
 
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
