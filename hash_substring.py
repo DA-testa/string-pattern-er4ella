@@ -4,9 +4,18 @@ def read_input():
         pattern = input().rstrip()
         text = input().rstrip()
     elif "F" in inn:
-        with open ('06.txt') as f:
-            pattern = f.readline().rstrip()
-            text = f.readline().rstrip()
+        name = input().rstrip()
+        path = './test/'
+        file = path + name
+        if "a" not in name:
+            try:
+                with open(file) as f:
+                    pattern = f.readline().rstrip()
+                    text = f.readline().rstrip()
+            except FileNotFoundError:
+                print("File not found")
+                pattern, text = "", ""
+
     return pattern, text
 
 def print_occurrences(output):
