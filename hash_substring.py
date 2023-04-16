@@ -1,10 +1,8 @@
-# python3
-
 def read_input():
-    inn=input().rstrip
+    inn = input().rstrip()
     if "I" in inn:
-            pattern = input().rstrip()
-            text = input().rstrip()
+        pattern = input().rstrip()
+        text = input().rstrip()
     elif "F" in inn:
         with open ('input.txt', 'r') as f:
             pattern = f.readline().rstrip()
