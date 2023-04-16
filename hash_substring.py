@@ -4,7 +4,7 @@ def read_input():
         pattern = input().rstrip()
         text = input().rstrip()
     elif "F" in inn:
-        name = input().rstrip()
+        name = '06'
         path = './tests/'
         file = path + name
         if "a" not in name:
