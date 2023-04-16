@@ -1,14 +1,14 @@
 # python3
 
 def read_input():
-    inn=input("F or I: ")
+    inn=input().rstrip
     if "I" in inn:
-        with open(input().rstrip()) as f:
+            pattern = input().rstrip()
+            text = input().rstrip()
+    elif "F" in inn:
+        with open ('input.txt', 'r') as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
-    elif "F" in inn:
-        name=input()
-        path='./test/'
     return pattern, text
 
 def print_occurrences(output):
